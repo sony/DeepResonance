@@ -1,0 +1,24 @@
+# ========= system global ========== #
+models:
+    deepresonance:
+        model_name: DeepResonanceModel
+        agent_name: DeepSpeedAgent
+
+seed: 12
+steps_trained: 0
+max_length: 512
+logging_step: 5
+num_clip_tokens: 77
+gen_emb_dim: 768
+pretrained_ckpt_path: ../ckpt/pretrained_ckpt
+
+# ========= LLM ========== #
+vicuna_version: 7b_v0 
+
+# ========= multimodal encoder ========== #
+imagebind_version: huge
+
+# ========= multimodal preencoding ========== #
+preencoding_dropout: 0.1
+num_preencoding_layers: 1
+

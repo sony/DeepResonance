@@ -1,0 +1,11 @@
+freeze_lm: true
+freeze_input_proj: false
+freeze_output_proj: true
+prompt: 'generate a caption'
+train:
+    warmup_rate: 0.1
+    epochs: 5
+    max_length: 512
+    max_shard_size: 10GB
+    dataset_name_list: ['coco', 'music4way_m2t', 'music4way_v2t']
+

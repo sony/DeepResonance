@@ -1,0 +1,17 @@
+# ========= lora hyper-params ========== #
+lora_r: 32
+lora_alpha: 32
+lora_dropout: 0.1
+
+freeze_lm: false
+freeze_input_proj: false
+freeze_output_proj: false
+prompt: ''
+
+train:
+    warmup_rate: 0.1
+    epochs: 2
+    max_length: 512
+    max_shard_size: 10GB
+    dataset_name_list: ['alpaca', 'musiccaps', 'musicqa_mtt', 'music4way_v2t', 'music4way_m2t', 'music4way_i2t', 'music4way_mi2t', 'music4way_mv2t']
+
