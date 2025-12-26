@@ -15,16 +15,16 @@ Or you can use ```Dockerfile``` to establish a virtual environment.
 ## Inference with Deepresonance-α
 ```
 cd code
-$DATASET=musiccaps # can replace with others, dataset path is defined in inference_deepresonance.py; select from [musicqa, musiccaps, music4way_musiccaps, music4way_mi2t, music4way_mv2t, music4way_any2t]
-$OUTPUT=musiccaps_dra_res
+DATASET=musiccaps # can replace with others, dataset path is defined in inference_deepresonance.py; select from [musicqa, musiccaps, music4way_musiccaps, music4way_mi2t, music4way_mv2t, music4way_any2t]
+OUTPUT=musiccaps_dra_res
 python inference_deepresonance.py --dataset $DATASET --result_file_name $OUTPUT --ckpt_path ../ckpt/deepresonance_alpha_delta_ckpt/deepresonance/7b_tiva_v0 --imagebind_embs_seq
 ```
 
 ## Inference with Deepresonance-β
 ```
 cd code
-$DATASET=musiccaps # can replace with others, dataset path is defined in inference_deepresonance.py; select from [musicqa, musiccaps, music4way_musiccaps, music4way_mi2t, music4way_mv2t, music4way_any2t]
-$OUTPUT=musiccaps_drb_res
+DATASET=musiccaps # can replace with others, dataset path is defined in inference_deepresonance.py; select from [musicqa, musiccaps, music4way_musiccaps, music4way_mi2t, music4way_mv2t, music4way_any2t]
+OUTPUT=musiccaps_drb_res
 python inference_deepresonance.py --dataset $DATASET --result_file_name $OUTPUT --ckpt_path ../ckpt/deepresonance_beta_delta_ckpt/deepresonance/7b_tiva_v0 --prellmfusion --imagebind_embs_seq
 ```
 
